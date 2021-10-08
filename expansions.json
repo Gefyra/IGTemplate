@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "2a4a0bdf-9ba8-4ba8-b3a4-5a114e3b8916",
+  "id" : "3ee6ef96-a681-4ce7-90e2-7935e1829d45",
   "meta" : {
-    "lastUpdated" : "2021-10-08T10:53:16.878+00:00"
+    "lastUpdated" : "2021-10-08T11:12:30.776+00:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -19,7 +19,7 @@
       "name" : "ActicoreTherapieTyp",
       "title" : "Acticore Therapie-Typen",
       "status" : "active",
-      "date" : "2021-10-08T10:53:16+00:00",
+      "date" : "2021-10-08T11:12:30+00:00",
       "publisher" : "Gefyra GmbH",
       "contact" : [{
         "name" : "Gefyra GmbH",
@@ -29,8 +29,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:4a4db39d-fab1-4a5f-94ef-9cdfd21008b4",
-        "timestamp" : "2021-10-08T10:53:37+00:00",
+        "identifier" : "urn:uuid:e870ada8-0330-4184-9b34-dd1cb74d2c4b",
+        "timestamp" : "2021-10-08T11:12:52+00:00",
         "total" : 3,
         "parameter" : [{
           "name" : "excludeNested",
