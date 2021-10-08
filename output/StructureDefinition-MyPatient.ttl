@@ -25,7 +25,7 @@
   fhir:StructureDefinition.version [ fhir:value "0.1.0"];
   fhir:StructureDefinition.name [ fhir:value "MyPatient"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2021-10-08T11:55:01+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2021-10-08T12:09:18+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "Gefyra GmbH"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
