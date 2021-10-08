@@ -3,7 +3,7 @@
 
 err = 20, warn = 15, info = 6
 IG Publisher Version: 1.1.81
-Generated Fri Oct 08 12:40:09 UTC 2021. FHIR version 4.0.1 for fhir.example#0.1.0 (canonical = http://example.org)
+Generated Fri Oct 08 12:46:22 UTC 2021. FHIR version 4.0.1 for fhir.example#0.1.0 (canonical = http://example.org)
  Build Errors : 2 / 14 / 0
  /github/workspace/fsh-generated/resources/Bundle-BeispielBundle : 8 / 1 / 20
  /github/workspace/fsh-generated/resources/Composition-ActicoreCompositionBeispiel : 8 / 0 / 1
