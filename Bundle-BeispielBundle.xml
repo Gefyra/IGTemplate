@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="BeispielBundle"/>
+  <meta>
+    <profile value="http://example.org/StructureDefinition/ActicoreBundle"/>
+    <profile value="https://acticore.com/fhir/StructureDefinition/ActicoreBundle"/>
+  </meta>
+  <identifier>
+    <system value="https://acticore.com/fhir/sid/export-id"/>
+    <value value="1"/>
+  </identifier>
+  <type value="document"/>
+  <timestamp value="2021-03-12T09:29:23.356+01:00"/>
+  <entry>
+    <fullUrl value="urn:uuid:8ef2f610-ea5e-4985-9588-d9b3cbec6f82"/>
+    <resource>
+      <Composition>
+        <id value="8ef2f610-ea5e-4985-9588-d9b3cbec6f82"/>
+        <meta>
+          <profile value="http://example.org/StructureDefinition/ActicoreComposition"/>
+        </meta>
+        <text>
+          <status value="generated"/><p></p><h3>Datenexport aus ACTICORE vom 12.2.2021</h3><p>für Max Mustermann (*01.01.1979)</p><p>von DiGa ACTICORE (Version 1.2)</p><p></p>
+        </text>
+        <status value="final"/>
+        <type>
+          <text value="DiGa-Datenexport"/>
+        </type>
+        <subject>
+          <reference value="urn:uuid:12d28533-d513-4dfb-9210-d94979887878"/>
+        </subject>
+        <date value="2021-03-12"/>
+        <author>
+          <reference value="urn:uuid:e30fb469-d017-44d3-95eb-2fac4e71f36f"/>
+        </author>
+        <title value="Datenexport aus Acticore"/>
+        <section>
+          <title value="Diagnosen"/>
+          <text>
+            <status value="generated"/><p></p><h3>Diagnosen</h3><ul><li>Diagnose: Inkontinenz (erfasst am 12.3.2021)</li></ul><p></p>
+          </text>
+          <entry>
+            <reference value="urn:uuid:88fce616-6e2e-454b-929c-a6d474e7be9f"/>
+          </entry>
+        </section>
+        <section>
+          <title value="Übungsergebnisse"/>
+          <text>
+            <status value="generated"/><table><tr><th>Datum</th><th>Übung</th><th>Ergebnis</th></tr><tr><td>12.3.2021</td><td>Ausdauer</td><td>86%</td></tr><tr><td>11.3.2021</td><td>Koordination</td><td>72%</td></tr></table>
+          </text>
+          <entry>
+            <reference value="urn:uuid:423bc194-894b-4048-ba63-5dc6ce895445"/>
+          </entry>
+          <entry>
+            <reference value="urn:uuid:052cee59-23b2-45a2-bc81-7536ecddce46"/>
+          </entry>
+        </section>
+      </Composition>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:423bc194-894b-4048-ba63-5dc6ce895445"/>
+    <resource>
+      <Observation>
+        <id value="423bc194-894b-4048-ba63-5dc6ce895445"/>
+        <meta>
+          <profile value="https://acticore.com/fhir/StructureDefinition/ActicoreObservation"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p></p><p><b>category</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/observation-category therapy}">Therapy</span></p><p><b>code</b>: <span title="Codes: {http://snomed.info/sct 88965008}">Muscular endurance development exercise (regime/therapy)</span></p><p><b>subject</b>: <a href="#Patient_12d28533-d513-4dfb-9210-d94979887878">See above (Patient/12d28533-d513-4dfb-9210-d94979887878)</a></p><p><b>effective</b>: 2021-03-12</p><p><b>value</b>: 86 percent</p><p><b>bodySite</b>: <span title="Codes: {http://snomed.info/sct 87770006}">Pelvic floor structure (body structure)</span></p><p><b>method</b>: <span title="Codes: {http://snomed.info/sct 183306002}">Pelvic floor exercises (regime/therapy)</span></p><p><b>device</b>: <a href="#Device_e30fb469-d017-44d3-95eb-2fac4e71f36f">See above (Device/e30fb469-d017-44d3-95eb-2fac4e71f36f)</a></p></div>
+        </text>
+        <status value="final"/>
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+            <code value="therapy"/>
+            <display value="Therapy"/>
+          </coding>
+        </category>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="88965008"/>
+            <display value="Muscular endurance development exercise (regime/therapy)"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="urn:uuid:12d28533-d513-4dfb-9210-d94979887878"/>
+        </subject>
+        <effectiveDateTime value="2021-03-12"/>
+        <valueQuantity>
+          <value value="86"/>
+          <unit value="percent"/>
+          <system value="http://unitsofmeasure.org"/>
+          <code value="%"/>
+        </valueQuantity>
+        <bodySite>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="87770006"/>
+            <display value="Pelvic floor structure (body structure)"/>
+          </coding>
+        </bodySite>
+        <method>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="183306002"/>
+            <display value="Pelvic floor exercises (regime/therapy)"/>
+          </coding>
+        </method>
+        <device>
+          <reference value="urn:uuid:e30fb469-d017-44d3-95eb-2fac4e71f36f"/>
+        </device>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:052cee59-23b2-45a2-bc81-7536ecddce46"/>
+    <resource>
+      <Observation>
+        <id value="052cee59-23b2-45a2-bc81-7536ecddce46"/>
+        <meta>
+          <profile value="https://acticore.com/fhir/StructureDefinition/ActicoreObservation"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p></p><p><b>category</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/observation-category therapy}">Therapy</span></p><p><b>code</b>: <span title="Codes: {http://snomed.info/sct 83439001}">Coordination exercise (regime/therapy)</span></p><p><b>subject</b>: <a href="#Patient_12d28533-d513-4dfb-9210-d94979887878">See above (Patient/12d28533-d513-4dfb-9210-d94979887878)</a></p><p><b>effective</b>: 2021-03-11</p><p><b>value</b>: 72 percent</p><p><b>bodySite</b>: <span title="Codes: {http://snomed.info/sct 87770006}">Pelvic floor structure (body structure)</span></p><p><b>method</b>: <span title="Codes: {http://snomed.info/sct 183306002}">Pelvic floor exercises (regime/therapy)</span></p><p><b>device</b>: <a href="#Device_e30fb469-d017-44d3-95eb-2fac4e71f36f">See above (Device/e30fb469-d017-44d3-95eb-2fac4e71f36f)</a></p></div>
+        </text>
+        <status value="final"/>
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+            <code value="therapy"/>
+            <display value="Therapy"/>
+          </coding>
+        </category>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="83439001"/>
+            <display value="Coordination exercise (regime/therapy)"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="urn:uuid:12d28533-d513-4dfb-9210-d94979887878"/>
+        </subject>
+        <effectiveDateTime value="2021-03-11"/>
+        <valueQuantity>
+          <value value="72"/>
+          <unit value="percent"/>
+          <system value="http://unitsofmeasure.org"/>
+          <code value="%"/>
+        </valueQuantity>
+        <bodySite>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="87770006"/>
+            <display value="Pelvic floor structure (body structure)"/>
+          </coding>
+        </bodySite>
+        <method>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="183306002"/>
+            <display value="Pelvic floor exercises (regime/therapy)"/>
+          </coding>
+        </method>
+        <device>
+          <reference value="urn:uuid:e30fb469-d017-44d3-95eb-2fac4e71f36f"/>
+        </device>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:88fce616-6e2e-454b-929c-a6d474e7be9f"/>
+    <resource>
+      <Condition>
+        <id value="88fce616-6e2e-454b-929c-a6d474e7be9f"/>
+        <meta>
+          <profile value="https://acticore.com/fhir/StructureDefinition/ActicoreDiagnose"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>code</b>: <span title="Codes: ">Inkontinenz</span></p><p><b>subject</b>: <a href="#Patient_12d28533-d513-4dfb-9210-d94979887878">See above (Patient/12d28533-d513-4dfb-9210-d94979887878)</a></p><p><b>recordedDate</b>: 2021-03-12</p></div>
+        </text>
+        <code>
+          <text value="Inkontinenz"/>
+        </code>
+        <subject>
+          <reference value="urn:uuid:12d28533-d513-4dfb-9210-d94979887878"/>
+        </subject>
+        <recordedDate value="2021-03-12"/>
+      </Condition>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:df07b48e-ce51-4565-b3b8-83174b5609cd"/>
+    <resource>
+      <Device>
+        <id value="df07b48e-ce51-4565-b3b8-83174b5609cd"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>manufacturer</b>: ACTICORE</p><p><b>serialNumber</b>: example</p><h3>DeviceNames</h3><table class="grid"><tr><td>-</td><td><b>Name</b></td><td><b>Type</b></td></tr><tr><td>*</td><td>ACTICORE1 SensorSeat</td><td>model-name</td></tr></table><h3>Versions</h3><table class="grid"><tr><td>-</td><td><b>Value</b></td></tr><tr><td>*</td><td>1</td></tr></table><p><b>patient</b>: <a href="#Patient_12d28533-d513-4dfb-9210-d94979887878">See above (Patient/12d28533-d513-4dfb-9210-d94979887878)</a></p></div>
+        </text>
+        <manufacturer value="ACTICORE"/>
+        <serialNumber value="example"/>
+        <deviceName>
+          <name value="ACTICORE1 SensorSeat"/>
+          <type value="model-name"/>
+        </deviceName>
+        <version>
+          <value value="1"/>
+        </version>
+        <patient>
+          <reference value="urn:uuid:12d28533-d513-4dfb-9210-d94979887878"/>
+        </patient>
+      </Device>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:e30fb469-d017-44d3-95eb-2fac4e71f36f"/>
+    <resource>
+      <Device>
+        <id value="e30fb469-d017-44d3-95eb-2fac4e71f36f"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>manufacturer</b>: ACTICORE</p><p><b>serialNumber</b>: example</p><h3>DeviceNames</h3><table class="grid"><tr><td>-</td><td><b>Name</b></td><td><b>Type</b></td></tr><tr><td>*</td><td>ACTICORE1 App</td><td>model-name</td></tr></table><h3>Versions</h3><table class="grid"><tr><td>-</td><td><b>Value</b></td></tr><tr><td>*</td><td>1.2</td></tr></table><p><b>patient</b>: <a href="#Patient_12d28533-d513-4dfb-9210-d94979887878">See above (Patient/12d28533-d513-4dfb-9210-d94979887878)</a></p></div>
+        </text>
+        <manufacturer value="ACTICORE"/>
+        <serialNumber value="example"/>
+        <deviceName>
+          <name value="ACTICORE1 App"/>
+          <type value="model-name"/>
+        </deviceName>
+        <version>
+          <value value="1.2"/>
+        </version>
+        <patient>
+          <reference value="urn:uuid:12d28533-d513-4dfb-9210-d94979887878"/>
+        </patient>
+      </Device>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:12d28533-d513-4dfb-9210-d94979887878"/>
+    <resource>
+      <Patient>
+        <id value="12d28533-d513-4dfb-9210-d94979887878"/>
+        <meta>
+          <profile value="https://acticore.com/fhir/StructureDefinition/ActicorePatient"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>name</b>: Max Mustermann </p><p><b>gender</b>: male</p><p><b>birthDate</b>: 1970-01-01</p></div>
+        </text>
+        <name>
+          <family value="Mustermann"/>
+          <given value="Max"/>
+        </name>
+        <gender value="male"/>
+        <birthDate value="1970-01-01"/>
+      </Patient>
+    </resource>
+  </entry>
+</Bundle>

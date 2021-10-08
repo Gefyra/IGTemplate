@@ -1,0 +1,24 @@
+{
+  "resourceType": "Device",
+  "id": "Acticore1SensorSeat",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>manufacturer</b>: ACTICORE</p><p><b>serialNumber</b>: example</p><h3>DeviceNames</h3><table class=\"grid\"><tr><td>-</td><td><b>Name</b></td><td><b>Type</b></td></tr><tr><td>*</td><td>ACTICORE1 SensorSeat</td><td>model-name</td></tr></table><h3>Versions</h3><table class=\"grid\"><tr><td>-</td><td><b>Value</b></td></tr><tr><td>*</td><td>1</td></tr></table><p><b>patient</b>: <a href=\"Patient-ActicorePatientBeispiel.html\">Generated Summary: Max Mustermann ; gender: male; birthDate: 1970-01-01</a></p></div>"
+  },
+  "manufacturer": "ACTICORE",
+  "serialNumber": "example",
+  "deviceName": [
+    {
+      "name": "ACTICORE1 SensorSeat",
+      "type": "model-name"
+    }
+  ],
+  "version": [
+    {
+      "value": "1"
+    }
+  ],
+  "patient": {
+    "reference": "Patient/ActicorePatientBeispiel"
+  }
+}

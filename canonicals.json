@@ -1,0 +1,58 @@
+[
+  {
+    "id": "fhir.example",
+    "type": "ImplementationGuide",
+    "url": "http://example.org/ImplementationGuide/fhir.example",
+    "version": "0.1.0",
+    "name": "TestIG"
+  },
+  {
+    "id": "ActicoreBundle",
+    "type": "StructureDefinition",
+    "url": "http://example.org/StructureDefinition/ActicoreBundle",
+    "version": "0.1.0",
+    "name": "ActicoreBundle"
+  },
+  {
+    "id": "ActicoreComposition",
+    "type": "StructureDefinition",
+    "url": "http://example.org/StructureDefinition/ActicoreComposition",
+    "version": "0.1.0",
+    "name": "ActicoreComposition"
+  },
+  {
+    "id": "MyPatient",
+    "type": "StructureDefinition",
+    "url": "http://example.org/StructureDefinition/MyPatient",
+    "version": "0.1.0",
+    "name": "MyPatient"
+  },
+  {
+    "id": "ActicoreTherapieTyp",
+    "type": "ValueSet",
+    "url": "http://example.org/ValueSet/ActicoreTherapieTyp",
+    "version": "0.1.0",
+    "name": "ActicoreTherapieTyp"
+  },
+  {
+    "id": "ActicoreDiagnose",
+    "type": "StructureDefinition",
+    "url": "https://acticore.com/fhir/StructureDefinition/ActicoreDiagnose",
+    "version": "0.1.0",
+    "name": "ActicoreDiagnose"
+  },
+  {
+    "id": "ActicoreObservation",
+    "type": "StructureDefinition",
+    "url": "https://acticore.com/fhir/StructureDefinition/ActicoreObservation",
+    "version": "0.1.0",
+    "name": "ActicoreObservation"
+  },
+  {
+    "id": "ActicorePatient",
+    "type": "StructureDefinition",
+    "url": "https://acticore.com/fhir/StructureDefinition/ActicorePatient",
+    "version": "0.1.0",
+    "name": "ActicorePatient"
+  }
+]

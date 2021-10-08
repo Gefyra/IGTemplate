@@ -1,0 +1,56 @@
+{
+  "resourceType": "Composition",
+  "id": "ActicoreCompositionBeispiel",
+  "meta": {
+    "profile": [
+      "http://example.org/StructureDefinition/ActicoreComposition"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<p></p><h3>Datenexport aus ACTICORE vom 12.2.2021</h3><p>für Max Mustermann (*01.01.1979)</p><p>von DiGa ACTICORE (Version 1.2)</p><p></p>"
+  },
+  "status": "final",
+  "type": {
+    "text": "DiGa-Datenexport"
+  },
+  "subject": {
+    "reference": "Patient/ActicorePatientBeispiel"
+  },
+  "date": "2021-03-12",
+  "author": [
+    {
+      "reference": "Device/Acticore1App"
+    }
+  ],
+  "title": "Datenexport aus Acticore",
+  "section": [
+    {
+      "title": "Diagnosen",
+      "text": {
+        "status": "generated",
+        "div": "<p></p><h3>Diagnosen</h3><ul><li>Diagnose: Inkontinenz (erfasst am 12.3.2021)</li></ul><p></p>"
+      },
+      "entry": [
+        {
+          "reference": "Condition/ActicoreDiagnoseBeispiel"
+        }
+      ]
+    },
+    {
+      "title": "Übungsergebnisse",
+      "text": {
+        "status": "generated",
+        "div": "<table><tr><th>Datum</th><th>Übung</th><th>Ergebnis</th></tr><tr><td>12.3.2021</td><td>Ausdauer</td><td>86%</td></tr><tr><td>11.3.2021</td><td>Koordination</td><td>72%</td></tr></table>"
+      },
+      "entry": [
+        {
+          "reference": "Observation/ActicoreObservationBeispiel1"
+        },
+        {
+          "reference": "Observation/ActicoreObservationBeispiel2"
+        }
+      ]
+    }
+  ]
+}
