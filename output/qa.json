@@ -3,7 +3,7 @@
   "name": "TestIG",
   "package-id": "fhir.example",
   "ig-ver": "0.1.0",
-  "date": "Fri, 08 Oct, 2021 13:35:21 +0000",
+  "date": "Fri, 08 Oct, 2021 13:58:38 +0000",
   "errs": 19,
   "warnings": 15,
   "hints": 6,
