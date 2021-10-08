@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="c3909832-783a-4e4e-85ee-eb576f722e29"/>
+  <id value="754f5caf-13a0-4b64-9970-3d3bde0fc590"/>
   <meta>
-    <lastUpdated value="2021-10-08T13:35:21.414+00:00"/>
+    <lastUpdated value="2021-10-08T13:58:38.286+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -65,7 +65,7 @@
         <name value="ActicoreTherapieTyp"/>
         <title value="Acticore Therapie-Typen"/>
         <status value="active"/>
-        <date value="2021-10-08T13:35:21+00:00"/>
+        <date value="2021-10-08T13:58:38+00:00"/>
         <publisher value="Gefyra GmbH"/>
         <contact>
           <name value="Gefyra GmbH"/>
@@ -75,8 +75,8 @@
           </telecom>
         </contact>
         <expansion>
-          <identifier value="urn:uuid:5e59ea84-c1ca-467a-91dc-6ca8c5ab28e8"/>
-          <timestamp value="2021-10-08T13:35:39+00:00"/>
+          <identifier value="urn:uuid:56fc48a2-3e96-48ce-b395-911201235bac"/>
+          <timestamp value="2021-10-08T13:58:55+00:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>
