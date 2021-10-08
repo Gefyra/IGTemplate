@@ -1,10 +1,10 @@
 ﻿TestIG : Validation Results
 =========================================
 
-err = 19, warn = 15, info = 6
+err = 20, warn = 15, info = 6
 IG Publisher Version: 1.1.81
-Generated Fri Oct 08 11:13:01 UTC 2021. FHIR version 4.0.1 for fhir.example#0.1.0 (canonical = http://example.org)
- Build Errors : 1 / 14 / 0
+Generated Fri Oct 08 12:36:12 UTC 2021. FHIR version 4.0.1 for fhir.example#0.1.0 (canonical = http://example.org)
+ Build Errors : 2 / 14 / 0
  /github/workspace/fsh-generated/resources/Bundle-BeispielBundle : 8 / 1 / 20
  /github/workspace/fsh-generated/resources/Composition-ActicoreCompositionBeispiel : 8 / 0 / 1
  /github/workspace/fsh-generated/resources/Condition-ActicoreDiagnoseBeispiel : 0 / 0 / 1
@@ -39,6 +39,7 @@ WARNING: Unable to find ImplementationGuide.definition.resource.description for 
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Patient/ActicorePatientBeispiel.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Bundle/BeispielBundle.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: /github/workspace/output/Observation-ActicoreObservationBeispiel1.html#/html/body/div/div/div/div/div/div/p/a at Line 157, column 827: The link 'ActicoreSeat' for "ActicoreSeat" cannot be resolved
+ERROR: /github/workspace/output/index.html#/html/body/div/div/div/div/div/p/img at Line 135, column 5: The image source 'logo.png' cannot be resolved
 == fsh-generated/resources/Bundle-BeispielBundle.json ==
 INFORMATION: Bundle/BeispielBundle: Bundle.entry[1]: This element does not match any known slice defined in the profile http://example.org/StructureDefinition/ActicoreBundle
 INFORMATION: Bundle/BeispielBundle: Bundle.entry[2]: This element does not match any known slice defined in the profile http://example.org/StructureDefinition/ActicoreBundle
