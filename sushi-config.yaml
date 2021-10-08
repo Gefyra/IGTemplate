@@ -18,5 +18,6 @@ publisher:
 # │  To use a provided input/includes/menu.xml file, delete the "menu" property below.             │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 menu:
-  Home: index.html
-  Artifacts: artifacts.html
+  Einleitung: index.html
+  Datenobjekte: artifacts.html
+  Exportformat: export.html
