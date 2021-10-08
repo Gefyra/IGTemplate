@@ -43,8 +43,12 @@ jobs:
           # Run the publisher - don't run the batch script but run the line directly
           args: java -jar ./input-cache/publisher.jar publisher -ig .
 
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
+#      - name: Deploy
+#        uses: peaceiris/actions-gh-pages@v3
+#        with:
+#          github_token: ${{ secrets.GITHUB_TOKEN }}
+#          publish_dir: ./output
+      - name: Add & Commit
+        uses: EndBug/add-and-commit@v7
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./output
+          add: 'output'
