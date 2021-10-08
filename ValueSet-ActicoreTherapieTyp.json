@@ -1,0 +1,47 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ActicoreTherapieTyp",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=88965008\">88965008</a></td><td>Muscular endurance development exercise (regime/therapy)</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=83439001\">83439001</a></td><td>Coordination exercise (regime/therapy)</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=229173003\">229173003</a></td><td>Speed changing training (regime/therapy)</td></tr></table></li></ul></div>"
+  },
+  "url": "http://example.org/ValueSet/ActicoreTherapieTyp",
+  "version": "0.1.0",
+  "name": "ActicoreTherapieTyp",
+  "title": "Acticore Therapie-Typen",
+  "status": "active",
+  "date": "2021-10-08T10:53:16+00:00",
+  "publisher": "Gefyra GmbH",
+  "contact": [
+    {
+      "name": "Gefyra GmbH",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://gefyra.de"
+        }
+      ]
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "88965008",
+            "display": "Muscular endurance development exercise (regime/therapy)"
+          },
+          {
+            "code": "83439001",
+            "display": "Coordination exercise (regime/therapy)"
+          },
+          {
+            "code": "229173003",
+            "display": "Speed changing training (regime/therapy)"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,333 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.org/Bundle/BeispielBundle> a fhir:Bundle;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "BeispielBundle"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://example.org/StructureDefinition/ActicoreBundle";
+       fhir:index 0;
+       fhir:link <http://example.org/StructureDefinition/ActicoreBundle>
+     ], [
+       fhir:value "https://acticore.com/fhir/StructureDefinition/ActicoreBundle";
+       fhir:index 1;
+       fhir:link <https://acticore.com/fhir/StructureDefinition/ActicoreBundle>
+     ]
+  ];
+  fhir:Bundle.identifier [
+     fhir:Identifier.system [ fhir:value "https://acticore.com/fhir/sid/export-id" ];
+     fhir:Identifier.value [ fhir:value "1" ]
+  ];
+  fhir:Bundle.type [ fhir:value "document"];
+  fhir:Bundle.timestamp [ fhir:value "2021-03-12T09:29:23.356+01:00"^^xsd:dateTime];
+  fhir:Bundle.entry [
+     fhir:index 0;
+     fhir:Bundle.entry.fullUrl [ fhir:value "urn:uuid:8ef2f610-ea5e-4985-9588-d9b3cbec6f82" ];
+     fhir:Bundle.entry.resource <urn:uuid:8ef2f610-ea5e-4985-9588-d9b3cbec6f82>
+  ], [
+     fhir:index 1;
+     fhir:Bundle.entry.fullUrl [ fhir:value "urn:uuid:423bc194-894b-4048-ba63-5dc6ce895445" ];
+     fhir:Bundle.entry.resource <urn:uuid:423bc194-894b-4048-ba63-5dc6ce895445>
+  ], [
+     fhir:index 2;
+     fhir:Bundle.entry.fullUrl [ fhir:value "urn:uuid:052cee59-23b2-45a2-bc81-7536ecddce46" ];
+     fhir:Bundle.entry.resource <urn:uuid:052cee59-23b2-45a2-bc81-7536ecddce46>
+  ], [
+     fhir:index 3;
+     fhir:Bundle.entry.fullUrl [ fhir:value "urn:uuid:88fce616-6e2e-454b-929c-a6d474e7be9f" ];
+     fhir:Bundle.entry.resource <urn:uuid:88fce616-6e2e-454b-929c-a6d474e7be9f>
+  ], [
+     fhir:index 4;
+     fhir:Bundle.entry.fullUrl [ fhir:value "urn:uuid:df07b48e-ce51-4565-b3b8-83174b5609cd" ];
+     fhir:Bundle.entry.resource <urn:uuid:df07b48e-ce51-4565-b3b8-83174b5609cd>
+  ], [
+     fhir:index 5;
+     fhir:Bundle.entry.fullUrl [ fhir:value "urn:uuid:e30fb469-d017-44d3-95eb-2fac4e71f36f" ];
+     fhir:Bundle.entry.resource <urn:uuid:e30fb469-d017-44d3-95eb-2fac4e71f36f>
+  ], [
+     fhir:index 6;
+     fhir:Bundle.entry.fullUrl [ fhir:value "urn:uuid:12d28533-d513-4dfb-9210-d94979887878" ];
+     fhir:Bundle.entry.resource <urn:uuid:12d28533-d513-4dfb-9210-d94979887878>
+  ] .
+
+<urn:uuid:8ef2f610-ea5e-4985-9588-d9b3cbec6f82> a fhir:Composition;
+  fhir:Resource.id [ fhir:value "8ef2f610-ea5e-4985-9588-d9b3cbec6f82"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://example.org/StructureDefinition/ActicoreComposition";
+       fhir:index 0;
+       fhir:link <http://example.org/StructureDefinition/ActicoreComposition>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<p></p><h3>Datenexport aus ACTICORE vom 12.2.2021</h3><p>für Max Mustermann (*01.01.1979)</p><p>von DiGa ACTICORE (Version 1.2)</p><p></p>"
+  ];
+  fhir:Composition.status [ fhir:value "final"];
+  fhir:Composition.type [
+     fhir:CodeableConcept.text [ fhir:value "DiGa-Datenexport" ]
+  ];
+  fhir:Composition.subject [
+     fhir:Reference.reference [ fhir:value "urn:uuid:12d28533-d513-4dfb-9210-d94979887878" ]
+  ];
+  fhir:Composition.date [ fhir:value "2021-03-12"^^xsd:date];
+  fhir:Composition.author [
+     fhir:index 0;
+     fhir:Reference.reference [ fhir:value "urn:uuid:e30fb469-d017-44d3-95eb-2fac4e71f36f" ]
+  ];
+  fhir:Composition.title [ fhir:value "Datenexport aus Acticore"];
+  fhir:Composition.section [
+     fhir:index 0;
+     fhir:Composition.section.title [ fhir:value "Diagnosen" ];
+     fhir:Composition.section.text [
+       fhir:Narrative.status [ fhir:value "generated" ];
+       fhir:Narrative.div "<p></p><h3>Diagnosen</h3><ul><li>Diagnose: Inkontinenz (erfasst am 12.3.2021)</li></ul><p></p>"
+     ];
+     fhir:Composition.section.entry [
+       fhir:index 0;
+       fhir:Reference.reference [ fhir:value "urn:uuid:88fce616-6e2e-454b-929c-a6d474e7be9f" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:Composition.section.title [ fhir:value "Übungsergebnisse" ];
+     fhir:Composition.section.text [
+       fhir:Narrative.status [ fhir:value "generated" ];
+       fhir:Narrative.div "<table><tr><th>Datum</th><th>Übung</th><th>Ergebnis</th></tr><tr><td>12.3.2021</td><td>Ausdauer</td><td>86%</td></tr><tr><td>11.3.2021</td><td>Koordination</td><td>72%</td></tr></table>"
+     ];
+     fhir:Composition.section.entry [
+       fhir:index 0;
+       fhir:Reference.reference [ fhir:value "urn:uuid:423bc194-894b-4048-ba63-5dc6ce895445" ]
+     ], [
+       fhir:index 1;
+       fhir:Reference.reference [ fhir:value "urn:uuid:052cee59-23b2-45a2-bc81-7536ecddce46" ]
+     ]
+  ] .
+
+<urn:uuid:423bc194-894b-4048-ba63-5dc6ce895445> a fhir:Observation;
+  fhir:Resource.id [ fhir:value "423bc194-894b-4048-ba63-5dc6ce895445"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://acticore.com/fhir/StructureDefinition/ActicoreObservation";
+       fhir:index 0;
+       fhir:link <https://acticore.com/fhir/StructureDefinition/ActicoreObservation>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p></p><p><b>category</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/observation-category therapy}\">Therapy</span></p><p><b>code</b>: <span title=\"Codes: {http://snomed.info/sct 88965008}\">Muscular endurance development exercise (regime/therapy)</span></p><p><b>subject</b>: <a href=\"#Patient_12d28533-d513-4dfb-9210-d94979887878\">See above (Patient/12d28533-d513-4dfb-9210-d94979887878)</a></p><p><b>effective</b>: 2021-03-12</p><p><b>value</b>: 86 percent</p><p><b>bodySite</b>: <span title=\"Codes: {http://snomed.info/sct 87770006}\">Pelvic floor structure (body structure)</span></p><p><b>method</b>: <span title=\"Codes: {http://snomed.info/sct 183306002}\">Pelvic floor exercises (regime/therapy)</span></p><p><b>device</b>: <a href=\"#Device_e30fb469-d017-44d3-95eb-2fac4e71f36f\">See above (Device/e30fb469-d017-44d3-95eb-2fac4e71f36f)</a></p></div>"
+  ];
+  fhir:Observation.status [ fhir:value "final"];
+  fhir:Observation.category [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/observation-category" ];
+       fhir:Coding.code [ fhir:value "therapy" ];
+       fhir:Coding.display [ fhir:value "Therapy" ]
+     ]
+  ];
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a sct:88965008;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:Coding.code [ fhir:value "88965008" ];
+       fhir:Coding.display [ fhir:value "Muscular endurance development exercise (regime/therapy)" ]
+     ]
+  ];
+  fhir:Observation.subject [
+     fhir:Reference.reference [ fhir:value "urn:uuid:12d28533-d513-4dfb-9210-d94979887878" ]
+  ];
+  fhir:Observation.effectiveDateTime [ fhir:value "2021-03-12"^^xsd:date];
+  fhir:Observation.valueQuantity [
+     fhir:Quantity.value [ fhir:value "86"^^xsd:decimal ];
+     fhir:Quantity.unit [ fhir:value "percent" ];
+     fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ];
+     fhir:Quantity.code [ fhir:value "%" ]
+  ];
+  fhir:Observation.bodySite [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a sct:87770006;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:Coding.code [ fhir:value "87770006" ];
+       fhir:Coding.display [ fhir:value "Pelvic floor structure (body structure)" ]
+     ]
+  ];
+  fhir:Observation.method [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a sct:183306002;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:Coding.code [ fhir:value "183306002" ];
+       fhir:Coding.display [ fhir:value "Pelvic floor exercises (regime/therapy)" ]
+     ]
+  ];
+  fhir:Observation.device [
+     fhir:Reference.reference [ fhir:value "urn:uuid:e30fb469-d017-44d3-95eb-2fac4e71f36f" ]
+  ] .
+
+<urn:uuid:052cee59-23b2-45a2-bc81-7536ecddce46> a fhir:Observation;
+  fhir:Resource.id [ fhir:value "052cee59-23b2-45a2-bc81-7536ecddce46"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://acticore.com/fhir/StructureDefinition/ActicoreObservation";
+       fhir:index 0;
+       fhir:link <https://acticore.com/fhir/StructureDefinition/ActicoreObservation>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p></p><p><b>category</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/observation-category therapy}\">Therapy</span></p><p><b>code</b>: <span title=\"Codes: {http://snomed.info/sct 83439001}\">Coordination exercise (regime/therapy)</span></p><p><b>subject</b>: <a href=\"#Patient_12d28533-d513-4dfb-9210-d94979887878\">See above (Patient/12d28533-d513-4dfb-9210-d94979887878)</a></p><p><b>effective</b>: 2021-03-11</p><p><b>value</b>: 72 percent</p><p><b>bodySite</b>: <span title=\"Codes: {http://snomed.info/sct 87770006}\">Pelvic floor structure (body structure)</span></p><p><b>method</b>: <span title=\"Codes: {http://snomed.info/sct 183306002}\">Pelvic floor exercises (regime/therapy)</span></p><p><b>device</b>: <a href=\"#Device_e30fb469-d017-44d3-95eb-2fac4e71f36f\">See above (Device/e30fb469-d017-44d3-95eb-2fac4e71f36f)</a></p></div>"
+  ];
+  fhir:Observation.status [ fhir:value "final"];
+  fhir:Observation.category [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/observation-category" ];
+       fhir:Coding.code [ fhir:value "therapy" ];
+       fhir:Coding.display [ fhir:value "Therapy" ]
+     ]
+  ];
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a sct:83439001;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:Coding.code [ fhir:value "83439001" ];
+       fhir:Coding.display [ fhir:value "Coordination exercise (regime/therapy)" ]
+     ]
+  ];
+  fhir:Observation.subject [
+     fhir:Reference.reference [ fhir:value "urn:uuid:12d28533-d513-4dfb-9210-d94979887878" ]
+  ];
+  fhir:Observation.effectiveDateTime [ fhir:value "2021-03-11"^^xsd:date];
+  fhir:Observation.valueQuantity [
+     fhir:Quantity.value [ fhir:value "72"^^xsd:decimal ];
+     fhir:Quantity.unit [ fhir:value "percent" ];
+     fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ];
+     fhir:Quantity.code [ fhir:value "%" ]
+  ];
+  fhir:Observation.bodySite [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a sct:87770006;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:Coding.code [ fhir:value "87770006" ];
+       fhir:Coding.display [ fhir:value "Pelvic floor structure (body structure)" ]
+     ]
+  ];
+  fhir:Observation.method [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a sct:183306002;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:Coding.code [ fhir:value "183306002" ];
+       fhir:Coding.display [ fhir:value "Pelvic floor exercises (regime/therapy)" ]
+     ]
+  ];
+  fhir:Observation.device [
+     fhir:Reference.reference [ fhir:value "urn:uuid:e30fb469-d017-44d3-95eb-2fac4e71f36f" ]
+  ] .
+
+<urn:uuid:88fce616-6e2e-454b-929c-a6d474e7be9f> a fhir:Condition;
+  fhir:Resource.id [ fhir:value "88fce616-6e2e-454b-929c-a6d474e7be9f"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://acticore.com/fhir/StructureDefinition/ActicoreDiagnose";
+       fhir:index 0;
+       fhir:link <https://acticore.com/fhir/StructureDefinition/ActicoreDiagnose>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>code</b>: <span title=\"Codes: \">Inkontinenz</span></p><p><b>subject</b>: <a href=\"#Patient_12d28533-d513-4dfb-9210-d94979887878\">See above (Patient/12d28533-d513-4dfb-9210-d94979887878)</a></p><p><b>recordedDate</b>: 2021-03-12</p></div>"
+  ];
+  fhir:Condition.code [
+     fhir:CodeableConcept.text [ fhir:value "Inkontinenz" ]
+  ];
+  fhir:Condition.subject [
+     fhir:Reference.reference [ fhir:value "urn:uuid:12d28533-d513-4dfb-9210-d94979887878" ]
+  ];
+  fhir:Condition.recordedDate [ fhir:value "2021-03-12"^^xsd:date] .
+
+<urn:uuid:df07b48e-ce51-4565-b3b8-83174b5609cd> a fhir:Device;
+  fhir:Resource.id [ fhir:value "df07b48e-ce51-4565-b3b8-83174b5609cd"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>manufacturer</b>: ACTICORE</p><p><b>serialNumber</b>: example</p><h3>DeviceNames</h3><table class=\"grid\"><tr><td>-</td><td><b>Name</b></td><td><b>Type</b></td></tr><tr><td>*</td><td>ACTICORE1 SensorSeat</td><td>model-name</td></tr></table><h3>Versions</h3><table class=\"grid\"><tr><td>-</td><td><b>Value</b></td></tr><tr><td>*</td><td>1</td></tr></table><p><b>patient</b>: <a href=\"#Patient_12d28533-d513-4dfb-9210-d94979887878\">See above (Patient/12d28533-d513-4dfb-9210-d94979887878)</a></p></div>"
+  ];
+  fhir:Device.manufacturer [ fhir:value "ACTICORE"];
+  fhir:Device.serialNumber [ fhir:value "example"];
+  fhir:Device.deviceName [
+     fhir:index 0;
+     fhir:Device.deviceName.name [ fhir:value "ACTICORE1 SensorSeat" ];
+     fhir:Device.deviceName.type [ fhir:value "model-name" ]
+  ];
+  fhir:Device.version [
+     fhir:index 0;
+     fhir:Device.version.value [ fhir:value "1" ]
+  ];
+  fhir:Device.patient [
+     fhir:Reference.reference [ fhir:value "urn:uuid:12d28533-d513-4dfb-9210-d94979887878" ]
+  ] .
+
+<urn:uuid:e30fb469-d017-44d3-95eb-2fac4e71f36f> a fhir:Device;
+  fhir:Resource.id [ fhir:value "e30fb469-d017-44d3-95eb-2fac4e71f36f"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>manufacturer</b>: ACTICORE</p><p><b>serialNumber</b>: example</p><h3>DeviceNames</h3><table class=\"grid\"><tr><td>-</td><td><b>Name</b></td><td><b>Type</b></td></tr><tr><td>*</td><td>ACTICORE1 App</td><td>model-name</td></tr></table><h3>Versions</h3><table class=\"grid\"><tr><td>-</td><td><b>Value</b></td></tr><tr><td>*</td><td>1.2</td></tr></table><p><b>patient</b>: <a href=\"#Patient_12d28533-d513-4dfb-9210-d94979887878\">See above (Patient/12d28533-d513-4dfb-9210-d94979887878)</a></p></div>"
+  ];
+  fhir:Device.manufacturer [ fhir:value "ACTICORE"];
+  fhir:Device.serialNumber [ fhir:value "example"];
+  fhir:Device.deviceName [
+     fhir:index 0;
+     fhir:Device.deviceName.name [ fhir:value "ACTICORE1 App" ];
+     fhir:Device.deviceName.type [ fhir:value "model-name" ]
+  ];
+  fhir:Device.version [
+     fhir:index 0;
+     fhir:Device.version.value [ fhir:value "1.2" ]
+  ];
+  fhir:Device.patient [
+     fhir:Reference.reference [ fhir:value "urn:uuid:12d28533-d513-4dfb-9210-d94979887878" ]
+  ] .
+
+<urn:uuid:12d28533-d513-4dfb-9210-d94979887878> a fhir:Patient;
+  fhir:Resource.id [ fhir:value "12d28533-d513-4dfb-9210-d94979887878"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://acticore.com/fhir/StructureDefinition/ActicorePatient";
+       fhir:index 0;
+       fhir:link <https://acticore.com/fhir/StructureDefinition/ActicorePatient>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>name</b>: Max Mustermann </p><p><b>gender</b>: male</p><p><b>birthDate</b>: 1970-01-01</p></div>"
+  ];
+  fhir:Patient.name [
+     fhir:index 0;
+     fhir:HumanName.family [ fhir:value "Mustermann" ];
+     fhir:HumanName.given [
+       fhir:value "Max";
+       fhir:index 0
+     ]
+  ];
+  fhir:Patient.gender [ fhir:value "male"];
+  fhir:Patient.birthDate [ fhir:value "1970-01-01"^^xsd:date] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://example.org/Bundle/BeispielBundle.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

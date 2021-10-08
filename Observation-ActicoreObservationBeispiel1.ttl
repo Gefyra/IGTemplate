@@ -1,0 +1,81 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.org/Observation/ActicoreObservationBeispiel1> a fhir:Observation;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "ActicoreObservationBeispiel1"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://acticore.com/fhir/StructureDefinition/ActicoreObservation";
+       fhir:index 0;
+       fhir:link <https://acticore.com/fhir/StructureDefinition/ActicoreObservation>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p></p><p><b>category</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/observation-category therapy}\">Therapy</span></p><p><b>code</b>: <span title=\"Codes: {http://snomed.info/sct 88965008}\">Muscular endurance development exercise (regime/therapy)</span></p><p><b>subject</b>: <a href=\"Patient-ActicorePatientBeispiel.html\">Generated Summary: Max Mustermann ; gender: male; birthDate: 1970-01-01</a></p><p><b>effective</b>: 2021-03-12</p><p><b>value</b>: 86 percent</p><p><b>bodySite</b>: <span title=\"Codes: {http://snomed.info/sct 87770006}\">Pelvic floor structure (body structure)</span></p><p><b>method</b>: <span title=\"Codes: {http://snomed.info/sct 183306002}\">Pelvic floor exercises (regime/therapy)</span></p><p><b>device</b>: <a href=\"ActicoreSeat\">ActicoreSeat</a></p></div>"
+  ];
+  fhir:Observation.status [ fhir:value "final"];
+  fhir:Observation.category [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/observation-category" ];
+       fhir:Coding.code [ fhir:value "therapy" ];
+       fhir:Coding.display [ fhir:value "Therapy" ]
+     ]
+  ];
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a sct:88965008;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:Coding.code [ fhir:value "88965008" ];
+       fhir:Coding.display [ fhir:value "Muscular endurance development exercise (regime/therapy)" ]
+     ]
+  ];
+  fhir:Observation.subject [
+     fhir:link <http://example.org/Patient/ActicorePatientBeispiel>;
+     fhir:Reference.reference [ fhir:value "Patient/ActicorePatientBeispiel" ]
+  ];
+  fhir:Observation.effectiveDateTime [ fhir:value "2021-03-12"^^xsd:date];
+  fhir:Observation.valueQuantity [
+     fhir:Quantity.value [ fhir:value "86"^^xsd:decimal ];
+     fhir:Quantity.unit [ fhir:value "percent" ];
+     fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ];
+     fhir:Quantity.code [ fhir:value "%" ]
+  ];
+  fhir:Observation.bodySite [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a sct:87770006;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:Coding.code [ fhir:value "87770006" ];
+       fhir:Coding.display [ fhir:value "Pelvic floor structure (body structure)" ]
+     ]
+  ];
+  fhir:Observation.method [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a sct:183306002;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:Coding.code [ fhir:value "183306002" ];
+       fhir:Coding.display [ fhir:value "Pelvic floor exercises (regime/therapy)" ]
+     ]
+  ];
+  fhir:Observation.device [
+     fhir:Reference.reference [ fhir:value "ActicoreSeat" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://example.org/Observation/ActicoreObservationBeispiel1.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+
