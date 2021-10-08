@@ -1,0 +1,84 @@
+﻿TestIG : Validation Results
+=========================================
+
+err = 19, warn = 15, info = 6
+IG Publisher Version: 1.1.81
+Generated Fri Oct 08 11:55:29 UTC 2021. FHIR version 4.0.1 for fhir.example#0.1.0 (canonical = http://example.org)
+ Build Errors : 1 / 14 / 0
+ /github/workspace/fsh-generated/resources/Bundle-BeispielBundle : 8 / 1 / 20
+ /github/workspace/fsh-generated/resources/Composition-ActicoreCompositionBeispiel : 8 / 0 / 1
+ /github/workspace/fsh-generated/resources/Condition-ActicoreDiagnoseBeispiel : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Device-Acticore1App : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Device-Acticore1SensorSeat : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ImplementationGuide-fhir.example : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Observation-ActicoreObservationBeispiel1 : 1 / 0 / 1
+ /github/workspace/fsh-generated/resources/Observation-ActicoreObservationBeispiel2 : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Patient-ActicorePatientBeispiel : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Patient-PatientExample : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-ActicoreBundle : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-ActicoreComposition : 2 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-ActicoreDiagnose : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-ActicoreObservation : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-ActicorePatient : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-MyPatient : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-ActicoreTherapieTyp : 0 / 0 / 1
+</table>
+== n/a ==
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/ActicoreBundle.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/ActicoreComposition.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/ActicoreDiagnose.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/ActicoreObservation.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/ActicorePatient.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/ActicoreTherapieTyp.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Device/Acticore1App.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Device/Acticore1SensorSeat.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Composition/ActicoreCompositionBeispiel.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Condition/ActicoreDiagnoseBeispiel.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/ActicoreObservationBeispiel1.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/ActicoreObservationBeispiel2.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Patient/ActicorePatientBeispiel.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Bundle/BeispielBundle.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: /github/workspace/output/Observation-ActicoreObservationBeispiel1.html#/html/body/div/div/div/div/div/div/p/a at Line 157, column 827: The link 'ActicoreSeat' for "ActicoreSeat" cannot be resolved
+== fsh-generated/resources/Bundle-BeispielBundle.json ==
+INFORMATION: Bundle/BeispielBundle: Bundle.entry[1]: This element does not match any known slice defined in the profile http://example.org/StructureDefinition/ActicoreBundle
+INFORMATION: Bundle/BeispielBundle: Bundle.entry[2]: This element does not match any known slice defined in the profile http://example.org/StructureDefinition/ActicoreBundle
+INFORMATION: Bundle/BeispielBundle: Bundle.entry[3]: This element does not match any known slice defined in the profile http://example.org/StructureDefinition/ActicoreBundle
+INFORMATION: Bundle/BeispielBundle: Bundle.entry[4]: This element does not match any known slice defined in the profile http://example.org/StructureDefinition/ActicoreBundle
+INFORMATION: Bundle/BeispielBundle: Bundle.entry[5]: This element does not match any known slice defined in the profile http://example.org/StructureDefinition/ActicoreBundle
+INFORMATION: Bundle/BeispielBundle: Bundle.entry[6]: This element does not match any known slice defined in the profile http://example.org/StructureDefinition/ActicoreBundle
+ERROR: Bundle/BeispielBundle: Bundle.entry[0].resource.ofType(Composition).text.div: txt-2: 'The narrative SHALL have some non-whitespace content' Rule 'The narrative SHALL have some non-whitespace content' Failed
+ERROR: Bundle/BeispielBundle: Bundle.entry[0].resource.ofType(Composition).text.div: Wrong namespace on the XHTML ('null', should be 'http://www.w3.org/1999/xhtml')
+ERROR: Bundle/BeispielBundle: Bundle.entry[0].resource.ofType(Composition).text.div: Wrong name on the XHTML ('null') - must start with div
+ERROR: Bundle/BeispielBundle: Bundle.entry[0].resource.ofType(Composition).section[0].text.div: txt-2: 'The narrative SHALL have some non-whitespace content' Rule 'The narrative SHALL have some non-whitespace content' Failed
+ERROR: Bundle/BeispielBundle: Bundle.entry[0].resource.ofType(Composition).section[0].text.div: Wrong namespace on the XHTML ('null', should be 'http://www.w3.org/1999/xhtml')
+ERROR: Bundle/BeispielBundle: Bundle.entry[0].resource.ofType(Composition).section[0].text.div: Wrong name on the XHTML ('null') - must start with div
+ERROR: Bundle/BeispielBundle: Bundle.entry[0].resource.ofType(Composition).section[1].text.div: Wrong namespace on the XHTML ('null', should be 'http://www.w3.org/1999/xhtml')
+ERROR: Bundle/BeispielBundle: Bundle.entry[0].resource.ofType(Composition).section[1].text.div: Wrong name on the XHTML ('null') - must start with div
+WARNING: Bundle/BeispielBundle: Bundle.meta.profile[1]: Profile reference 'https://acticore.com/fhir/StructureDefinition/ActicoreBundle' has not been checked because it is unknown, and the validator is set to not fetch unknown profiles
+== fsh-generated/resources/Composition-ActicoreCompositionBeispiel.json ==
+ERROR: Composition/ActicoreCompositionBeispiel: Composition.text.div: txt-2: 'The narrative SHALL have some non-whitespace content' Rule 'The narrative SHALL have some non-whitespace content' Failed
+ERROR: Composition/ActicoreCompositionBeispiel: Composition.text.div: Wrong namespace on the XHTML ('null', should be 'http://www.w3.org/1999/xhtml')
+ERROR: Composition/ActicoreCompositionBeispiel: Composition.text.div: Wrong name on the XHTML ('null') - must start with div
+ERROR: Composition/ActicoreCompositionBeispiel: Composition.section[0].text.div: txt-2: 'The narrative SHALL have some non-whitespace content' Rule 'The narrative SHALL have some non-whitespace content' Failed
+ERROR: Composition/ActicoreCompositionBeispiel: Composition.section[0].text.div: Wrong namespace on the XHTML ('null', should be 'http://www.w3.org/1999/xhtml')
+ERROR: Composition/ActicoreCompositionBeispiel: Composition.section[0].text.div: Wrong name on the XHTML ('null') - must start with div
+ERROR: Composition/ActicoreCompositionBeispiel: Composition.section[1].text.div: Wrong namespace on the XHTML ('null', should be 'http://www.w3.org/1999/xhtml')
+ERROR: Composition/ActicoreCompositionBeispiel: Composition.section[1].text.div: Wrong name on the XHTML ('null') - must start with div
+== fsh-generated/resources/Condition-ActicoreDiagnoseBeispiel.json ==
+== fsh-generated/resources/Device-Acticore1App.json ==
+== fsh-generated/resources/Device-Acticore1SensorSeat.json ==
+== fsh-generated/resources/ImplementationGuide-fhir.example.json ==
+== fsh-generated/resources/Observation-ActicoreObservationBeispiel1.json ==
+ERROR: Observation/ActicoreObservationBeispiel1: Observation.device: Unable to resolve resource 'ActicoreSeat'
+== fsh-generated/resources/Observation-ActicoreObservationBeispiel2.json ==
+== fsh-generated/resources/Patient-ActicorePatientBeispiel.json ==
+== fsh-generated/resources/Patient-PatientExample.json ==
+== fsh-generated/resources/StructureDefinition-ActicoreBundle.json ==
+== fsh-generated/resources/StructureDefinition-ActicoreComposition.json ==
+ERROR: StructureDefinition/ActicoreComposition: StructureDefinition.snapshot.element[60].slicing: ElementDefinition.slicing.rules: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/ElementDefinition)
+ERROR: StructureDefinition/ActicoreComposition: StructureDefinition.differential.element[12].slicing: ElementDefinition.slicing.rules: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/ElementDefinition)
+== fsh-generated/resources/StructureDefinition-ActicoreDiagnose.json ==
+== fsh-generated/resources/StructureDefinition-ActicoreObservation.json ==
+== fsh-generated/resources/StructureDefinition-ActicorePatient.json ==
+== fsh-generated/resources/StructureDefinition-MyPatient.json ==
+== fsh-generated/resources/ValueSet-ActicoreTherapieTyp.json ==

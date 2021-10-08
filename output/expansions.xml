@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="807cf651-1aad-4e5b-b663-94d173d243a5"/>
+  <meta>
+    <lastUpdated value="2021-10-08T11:55:01.437+00:00"/>
+  </meta>
+  <type value="collection"/>
+  <entry>
+    <fullUrl value="http://example.org/ValueSet/ActicoreTherapieTyp"/>
+    <resource>
+      <ValueSet>
+        <id value="ActicoreTherapieTyp"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 3 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 31-Jul 2021</p>
+            <p>All codes in this table are from the system 
+              <a href="http://terminology.hl7.org/2.1.0/CodeSystem-v3-snomed-CT.html">
+                <code>http://snomed.info/sct</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-88965008"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=88965008">88965008</a>
+                </td>
+                <td>Muscular endurance development exercise</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-83439001"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=83439001">83439001</a>
+                </td>
+                <td>Coordination exercise</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-229173003"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=229173003">229173003</a>
+                </td>
+                <td>Speed changing training</td>
+                <td/>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://example.org/ValueSet/ActicoreTherapieTyp"/>
+        <version value="0.1.0"/>
+        <name value="ActicoreTherapieTyp"/>
+        <title value="Acticore Therapie-Typen"/>
+        <status value="active"/>
+        <date value="2021-10-08T11:55:01+00:00"/>
+        <publisher value="Gefyra GmbH"/>
+        <contact>
+          <name value="Gefyra GmbH"/>
+          <telecom>
+            <system value="url"/>
+            <value value="http://gefyra.de"/>
+          </telecom>
+        </contact>
+        <expansion>
+          <identifier value="urn:uuid:857c8f71-a711-4e79-9400-2d1768425afa"/>
+          <timestamp value="2021-10-08T11:55:20+00:00"/>
+          <total value="3"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="limitedExpansion"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueString value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210731"/>
+          </parameter>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="88965008"/>
+            <display value="Muscular endurance development exercise"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="83439001"/>
+            <display value="Coordination exercise"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="229173003"/>
+            <display value="Speed changing training"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+</Bundle>

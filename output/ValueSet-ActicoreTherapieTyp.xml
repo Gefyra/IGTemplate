@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="ActicoreTherapieTyp"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=88965008">88965008</a></td><td>Muscular endurance development exercise (regime/therapy)</td></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=83439001">83439001</a></td><td>Coordination exercise (regime/therapy)</td></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=229173003">229173003</a></td><td>Speed changing training (regime/therapy)</td></tr></table></li></ul></div>
+  </text>
+  <url value="http://example.org/ValueSet/ActicoreTherapieTyp"/>
+  <version value="0.1.0"/>
+  <name value="ActicoreTherapieTyp"/>
+  <title value="Acticore Therapie-Typen"/>
+  <status value="active"/>
+  <date value="2021-10-08T11:55:01+00:00"/>
+  <publisher value="Gefyra GmbH"/>
+  <contact>
+    <name value="Gefyra GmbH"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://gefyra.de"/>
+    </telecom>
+  </contact>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="88965008"/>
+        <display value="Muscular endurance development exercise (regime/therapy)"/>
+      </concept>
+      <concept>
+        <code value="83439001"/>
+        <display value="Coordination exercise (regime/therapy)"/>
+      </concept>
+      <concept>
+        <code value="229173003"/>
+        <display value="Speed changing training (regime/therapy)"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

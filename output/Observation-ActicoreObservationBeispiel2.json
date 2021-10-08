@@ -1,0 +1,65 @@
+{
+  "resourceType": "Observation",
+  "id": "ActicoreObservationBeispiel2",
+  "meta": {
+    "profile": [
+      "https://acticore.com/fhir/StructureDefinition/ActicoreObservation"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p></p><p><b>category</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/observation-category therapy}\">Therapy</span></p><p><b>code</b>: <span title=\"Codes: {http://snomed.info/sct 83439001}\">Coordination exercise (regime/therapy)</span></p><p><b>subject</b>: <a href=\"Patient-ActicorePatientBeispiel.html\">Generated Summary: Max Mustermann ; gender: male; birthDate: 1970-01-01</a></p><p><b>effective</b>: 2021-03-11</p><p><b>value</b>: 72 percent</p><p><b>bodySite</b>: <span title=\"Codes: {http://snomed.info/sct 87770006}\">Pelvic floor structure (body structure)</span></p><p><b>method</b>: <span title=\"Codes: {http://snomed.info/sct 183306002}\">Pelvic floor exercises (regime/therapy)</span></p><p><b>device</b>: <a href=\"Device-Acticore1App.html\">Generated Summary: manufacturer: ACTICORE; serialNumber: example</a></p></div>"
+  },
+  "status": "final",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "therapy",
+          "display": "Therapy"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "83439001",
+        "display": "Coordination exercise (regime/therapy)"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/ActicorePatientBeispiel"
+  },
+  "effectiveDateTime": "2021-03-11",
+  "valueQuantity": {
+    "value": 72,
+    "unit": "percent",
+    "system": "http://unitsofmeasure.org",
+    "code": "%"
+  },
+  "bodySite": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "87770006",
+        "display": "Pelvic floor structure (body structure)"
+      }
+    ]
+  },
+  "method": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "183306002",
+        "display": "Pelvic floor exercises (regime/therapy)"
+      }
+    ]
+  },
+  "device": {
+    "reference": "Device/Acticore1App"
+  }
+}
